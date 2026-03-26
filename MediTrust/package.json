@@ -1,0 +1,20 @@
+{
+  "name": "meditrust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:admin": "cd admin && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:all": "concurrently \"npm run start:frontend\" \"npm run start:admin\" \"npm run start:backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
